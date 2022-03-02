@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Netflix Clone</title>
+
+  <!--Owl carousel CSS-->
+  <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+  <!--Responsividade-->
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <!--Modal-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">NETFLIX</h2>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentários</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="filme-principal">
+      <div class="container">
+        <h3 class="titulo">HOUSE OF CARDS</h3>
+        <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+      </div>
+      <div class="botoes">
+        <button role="button" id="main" class="botao" onclick="onClick(this)">
+          <i class="fa-solid fa-play"></i>
+          ASSISTIR AGORA
+        </button>
+        <button role="button" class="botao">
+          <i class="fa-solid fa-circle-info"></i>
+          MAIS INFORMAÇÕES</button>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="carrossel-filmes">
+    <div id="carousel-container" class="owl-carousel owl-theme">
+    
+    </div>
+  </div>
+
+<!--Modais-->
+<div id="container-modais">
+  
+  <div id="main0" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom conteudo-modal">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8QnMmpfKWvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!--Fonte de icones do fontawesome-->
+<script src="https://kit.fontawesome.com/bd88afff23.js" crossorigin="anonymous"></script>
+
+
+<!-- Main JS -->
+<script src="./js/main.js"></script>
+
+
+ 
+</html>
